@@ -5,7 +5,7 @@ import json
 
 
 def run_subfinder(target):
-    """Run Subfinder and return the found subdomains."""
+    
     output_file = f"{target}_subdomains.txt"  
     
     subprocess.run(["subfinder", "-d", target, "-o", output_file, "-silent"])
@@ -24,7 +24,7 @@ def print_author_info():
 
 
 def load_previous_results(target):
-    """Load previously found subdomains from a file."""
+    
     previous_file = f"{target}_previous_subdomains.json"
     if os.path.exists(previous_file):
         with open(previous_file, 'r') as f:
@@ -32,7 +32,7 @@ def load_previous_results(target):
     return set()  
 
 def save_current_results(target, subdomains):
-    """Save the current found subdomains to a file."""
+    
     current_file = f"{target}_previous_subdomains.json"
     with open(current_file, 'w') as f:
         json.dump(list(subdomains), f) 
