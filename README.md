@@ -10,7 +10,8 @@ This tool helps you track changes and additions to subdomains over time using **
 - **Easy identification**: New subdomains are highlighted in green for easy identification
 
 # Use : 
-To provide input to the tool so that it searches for the target address you want, use the command: `nano subfinder_everyday.py` and change the value of `target_domain = "example.com"` on the last line.
+To provide input to the tool so that it searches for the target address you want, use the command: `nano subfinder_everyday.py` and change the value of `target_domain = "example.com"` on the last line.<img width="853" alt="Screenshot 2024-10-16 at 11 16 26 AM" src="https://github.com/user-attachments/assets/afd60430-605e-42df-a879-62726aead05a">
+
 
 Run the tool :‌
   python3 subfinder_everyday.py
